@@ -1,0 +1,232 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #FEC6A1;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center; /* Center the logo */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent */
+    margin-bottom: 10px;
+}
+
+.logo img {
+    width: 150px; /* Set logo size */
+}
+
+/* Video Styles */
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: blur(5px); /* Apply blur effect to the video */
+    z-index: -1; /* Ensure video stays behind the content */
+    object-fit: cover; /* Maintain aspect ratio and cover the screen */
+}
+
+/* Center the overlay text */
+.content {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset the center */
+    background: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
+    color: #f1f1f1;
+    padding: 20px;
+    text-align: center; /* Center text within the content */
+    border-radius: 8px; /* Optional: add rounded corners */
+    width: 90%;
+    max-width: 400px; /* Limit width */
+}
+
+.content a{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}
+
+.content p {
+    margin-bottom: 10px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center form elements horizontally */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for form */
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px; /* Limit form width */
+    margin: 20px auto; /* Center the form */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+form input, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; /* Space between form elements */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Input field focus styling */
+form input:focus {
+    border-color: #000; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Footer */
+footer {
+    background-color: rgba(70, 62, 57, 0.8); /* Slightly transparent */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto; /* This pushes the footer to the bottom */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.social-icons .x_icon {
+    width: 55px;
+    height: 33px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 30px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    .tablet-only, .desktop-only {
+        display: none;
+    }
+    .mobile-only {
+        display: block;
+    }
+
+    video {
+        width: 100%;  /* Ensure video stretches fully */
+        height: auto;  /* Auto height for small screens */
+        object-fit: cover; /* Maintain aspect ratio */
+    }
+
+    .content {
+        padding: 15px; /* Adjust padding for smaller screens */
+        width: 90%;    /* Increase width for mobile responsiveness */
+    }
+
+    header {
+        padding: 5px 10px; /* Reduce header padding */
+    }
+
+    .logo img {
+        width: 120px; /* Smaller logo for mobile */
+    }
+
+    button {
+        width: 100%; /* Make button full-width on mobile */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    form {
+        width: 90%; /* Ensure form width is responsive on smaller screens */
+    }
+
+    form input, form button {
+        font-size: 14px; /* Adjust input/button font size for mobile */
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .mobile-only, .desktop-only {
+        display: none;
+    }
+    .tablet-only {
+        display: block;
+    }
+
+    video {
+        min-width: 100%;  /* Ensure video stretches fully */
+        min-height: 100%;  /* Cover full screen */
+        object-fit: cover; /* Maintain aspect ratio */
+    }
+
+    .content {
+        padding: 20px; /* Adjust padding for tablet */
+        width: 80%;    /* Adjust width for tablets */
+    }
+
+    header {
+        padding: 10px 20px; /* Maintain header padding */
+    }
+
+    .logo img {
+        width: 140px; /* Adjust logo size for tablet */
+    }
+
+    button {
+        width: 100%; /* Full width button on tablet */
+        font-size: 18px; /* Adjust font size */
+    }
+
+    form {
+        width: 80%; /* Adjust form width for tablets */
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1025px) {
+    .mobile-only, .tablet-only {
+        display: none;
+    }
+    .desktop-only {
+        display: block;
+    }
+
+  
+}

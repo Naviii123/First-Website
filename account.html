@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiant Beauty Cos - account</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    
+</head>
+<body>
+    <header>
+        <nav class="desktop">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="shop.html">Shop</a></li>
+          </ul>
+        </nav>
+        
+        <!-- Hamburger Menu Icon -->
+        <img src="img/Hamburger.png" class="mobile-tablet menu" id="hamburger">
+        
+        <div class="logo">
+          <a href="index.html"><img src="img/WAHMEN logo title stuff.png" alt="Radiant Beauty Logo"></a>
+        </div>
+        
+        <div class="icons">
+          <img src="img/search icon.png" alt="Search icon">
+          <a href="cart.html"><img src="img/Add to cart.png" alt="Cart icon"></a>
+          <a href="settings.html"><img src="img/settings.png" alt="Settings icon" class="desktop"></a>
+        </div>
+        
+      </header>
+
+       <!-- Hamburger Menu Structure -->
+ <div class="hamburger-menu mobile-tablet" id="hamburger-menu">
+    <div class="close-button" id="close-button">&times;</div>
+    <ul>
+      <li><a href="account.html"><img src="img/account icon.png" alt="account Icon">Account</a></li>
+      <li><a href="settings.html"><img src="img/settings.png" alt="Settings Icon">Settings</a></li>
+    </ul>
+  </div>
+
+      <div class="back_button mobile-tablet">
+        <a href="index.html"><img src="img/BACK.png"> </a>
+        <h2><a href="index.html">Back to HOME</a></h2>
+    </div>
+
+    <main>
+        <div class="account-container">
+         
+            <div class="account-info-container">
+                <div class="account-info-box">
+                    <h3>Account Information</h3>
+                    <p>First Name: </p>
+                    <p class="free_space"><span id="updatedFirstName"></span></p>
+                    <p>Last Name: </p>
+                    <p class="free_space"><span id="updatedLastName"></span></p>
+                    <p>Phone Number: </p>
+                    <p class="free_space"><span id="updatedPhoneNumber"></span></p>
+                    <p>Email: </p>
+                    <p class="free_space"><span id="updatedEmail"></span></p>
+                    <p>Address:</p>
+                    <p class="free_space"> <span id="updatedAddress"></span></p>
+                    <button id="deleteButton">Delete</button>
+                </div>
+            </div>
+            <form id="account-form">
+                <h3>Update Account</h3>
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone   
+ Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber"   
+ required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>   
+
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+                <button type="submit">Update</button>   
+
+            </form>
+        </div>
+    </main>
+
+    <script src="js/account.js"></script> 
+
+
+    <footer>
+        <div class="social-icons">
+            <img src="img/fb-removebg-preview.png" alt="Facebook icon">
+            <img class="x_icon" src="img/x_icon-removebg-preview.png" alt="Twitter icon">
+            <img src="img/ig_icon-removebg-preview.png" alt="Instagram icon">
+        </div>
+        <p>&copy; 2024 Radiant Beauty Inc. All Rights Reserved</p>
+    </footer>
+    <script src="js/hamburger.js"></script>
+</body>
+</html>

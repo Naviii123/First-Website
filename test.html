@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow Example</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden; /* Hide overflow for better appearance */
+        }
+
+        .slideshow-slide {
+            display: none; /* Hide all slides by default */
+        }
+
+        .fade {
+            animation: fade 1.5s ease-in-out; /* Add fade effect */
+        }
+
+        @keyframes fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .text {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            color: white;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="slideshow-container">
+    <div class="slideshow-slide fade">
+        <img src="img/a bonne.png" style="width:100%">
+        <div class="text">Slide 1 Description</div>
+    </div>
+
+    <div class="slideshow-slide fade">
+        <img src="img/account icon.png" style="width:100%">
+        <div class="text">Slide 2 Description</div>
+    </div>
+
+    <div class="slideshow-slide fade">
+        <img src="img/BACK.png" style="width:100%">
+        <div class="text">Slide 3 Description</div>
+    </div>
+
+    <!-- Add more slides as needed -->
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        const slides = document.getElementsByClassName("slideshow-slide");
+        
+        // Hide all slides
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; 
+        }
+        
+        slideIndex++;
+        
+        // Reset slide index if it exceeds the number of slides
+        if (slideIndex > slides.length) { 
+            slideIndex = 1; 
+        }
+        
+        // Show the current slide
+        slides[slideIndex - 1].style.display = "block"; 
+        
+        // Change slide every 5 seconds
+        setTimeout(showSlides, 5000); 
+    }
+</script>
+
+</body>
+</html>

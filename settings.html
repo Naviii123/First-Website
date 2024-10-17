@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiant Beauty Cos - account</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="desktop">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="shop.html">Shop</a></li>
+          </ul>
+        </nav>
+        
+        <!-- Hamburger Menu Icon -->
+        <img src="img/Hamburger.png" class="mobile-tablet menu" id="hamburger">
+        
+        <div class="logo">
+          <a href="index.html"><img src="img/WAHMEN logo title stuff.png" alt="Radiant Beauty Logo"></a>
+        </div>
+        
+        <div class="icons">
+          <img src="img/search icon.png" alt="Search icon">
+          <a href="cart.html"><img src="img/Add to cart.png" alt="Cart icon"></a>
+          <a href="settings.html"><img src="img/settings.png" alt="Settings icon" class="desktop"></a>
+        </div>
+      </header>
+       <!-- Hamburger Menu Structure -->
+ <div class="hamburger-menu mobile-tablet" id="hamburger-menu">
+    <div class="close-button" id="close-button">&times;</div>
+    <ul>
+      <li><a href="account.html"><img src="img/account icon.png" alt="account Icon">Account</a></li>
+      <li><a href="settings.html"><img src="img/settings.png" alt="Settings Icon">Settings</a></li>
+    </ul>
+  </div>
+
+      <div class="back_button mobile-tablet">
+        <a href="index.html"><img src="img/BACK.png"> </a>
+        <h2 ><a href="index.html" >Back to HOME</a></h2>
+    </div>
+    <main>
+        <div class="settings-container desktop">
+            <h2>SETTINGS</h2>
+            <table>
+                <th>
+                    Accessibility
+                </th>
+                <th>
+                    Notifications
+                </th>
+                <th>
+                    Billings
+                </th>
+                <th>
+                    Purchases
+                </th>
+
+            </table>
+ 
+            <div class="settings-options">
+                <div class="setting">
+                    <label for="language">Language:</label>
+                    <select id="language">
+                        <option value="en">English (United States)</option>
+                        </select>
+                </div>
+                <div class="setting">
+                    <label for="helpCenter">Help Center:</label>
+                    <a href="mailto:RadiantBeautyOfficial@gmail.com">RadiantBeautyOfficial@gmail.com</a>
+                </div>
+                <div class="setting">
+                    <label for="communityRules">Community Rules:</label>
+                    <a href="https://www.commrules.com">www.RBcommurules.com</a>
+                </div>
+                <div class="setting">
+                    <button class="delete-account-button">Reset to Default</button>
+                </div>
+                <div class="setting_logout">
+                    <button class="reset-to-default-button">Log Out</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-tablet">
+            
+            <div class="settings-container tablet-only">
+                <h2>SETTINGS</h2>
+                <table>
+                    <th>
+                        Accessibility
+                    </th>
+                    <th>
+                        Notifications
+                    </th>
+                    <th>
+                        Billings
+                    </th>
+                    <th>
+                        Purchases
+                    </th>
+
+                </table>
+    
+                <div class="settings-options">
+                    <div class="setting">
+                        <label for="language">Language:</label>
+                        <select id="language">
+                            <option value="en">English (United States)</option>
+                            </select>
+                    </div>
+                    <div class="setting">
+                        <label for="helpCenter">Help Center:</label>
+                        <a href="mailto:RadiantBeautyOfficial@gmail.com">RadiantBeautyOfficial@gmail.com</a>
+                    </div>
+                    <div class="setting">
+                        <label for="communityRules">Community Rules:</label>
+                        <a href="https://www.commrules.com">www.RBcommurules.com</a>
+                    </div>
+                    <div class="setting">
+                        <button class="delete-account-button">Reset to Default</button>
+                    </div>
+                    <div class="setting_logout">
+                        <button class="reset-to-default-button">Log Out</button>
+                    </div>
+                </div>
+            </div>
+
+            <main>
+                <div class="settings-container mobile-only">
+                    <h2>SETTINGS</h2>
+            
+                    <div class="settings-options">
+                        <div class="setting">
+                            <h3>Accessibility Options</h3>
+                            <ul class="accessibility-list">
+                                <li>
+                                    <label><input type="checkbox" name="accessibility" value="high-contrast"> High Contrast Mode</label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox" name="accessibility" value="screen-reader"> Screen Reader Support</label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox" name="accessibility" value="text-size"> Larger Text Size</label>
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <div class="setting">
+                            <label for="language">Language:</label>
+                            <select id="language">
+                                <option value="en">English (United States)</option>
+                                <option value="ph">Filipino</option>
+                                <option value="es">Spanish</option>
+                                <option value="fr">French</option>
+                            </select>
+                        </div>
+            
+                        <div class="setting">
+                            <label>Notifications:</label>
+                            <label><input type="radio" name="notifications" value="email" checked> Email Notifications</label>
+                            <label><input type="radio" name="notifications" value="sms"> SMS Notifications</label>
+                            <label><input type="radio" name="notifications" value="none"> No Notifications</label>
+                        </div>
+            
+                        <div class="setting">
+                            <label for="billing-email">Billing Email:</label>
+                            <input type="email" id="billing-email" placeholder="Enter your billing email">
+                        </div>
+            
+                        <div class="setting">
+                            <button class="delete-account-button">Reset to Default</button>
+                        </div>
+            
+                        <div class="setting_logout">
+                            <button class="reset-to-default-button">Log Out</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+    </div>
+</main>
+
+        </div>
+    </main>
+   
+
+    <script src="js/main.js"></script> 
+
+
+    <footer>
+        <div class="social-icons">
+            <img src="img/fb-removebg-preview.png" alt="Facebook icon">
+            <img class="x_icon" src="img/x_icon-removebg-preview.png" alt="Twitter icon">
+            <img src="img/ig_icon-removebg-preview.png" alt="Instagram icon">
+        </div>
+        <p>&copy; 2024 Radiant Beauty Inc. All Rights Reserved</p>
+    </footer>
+    <script src="js/hamburger.js"></script>
+</body>
+</html>
